@@ -73,6 +73,18 @@ CREATE TABLE [dbo].[accounting_data_tmp](
 	[MS_Quarantine_State] [int] NULL,
 	[MS_RAS_Correlation_ID] [nvarchar](255) NULL,
 	[MS_Network_Access_Server_Type] [nvarchar](255) NULL,
+	[NAS_Port_Id] [nvarchar](24) NULL,
+	[Framed_MTU] [int] NULL,
+	[Vendor_Specific] [nvarchar](max) NULL,
+	[Event_Source] [nvarchar](max) NULL,
+	[MS_Link_Drop_Time_Limit] [int] NULL,
+	[MS_Link_Utilization_Threshold] [int] NULL,
+	[MS_RAS_RoutingDomain_ID] [nvarchar](38) NULL,
+	[PEAP_Fast_Roamed_Session] [int] NULL,
+	[SAM_Account_Name] [nvarchar](max) NULL,
+	[Acct_Input_Gigawords] [bigint] NULL,
+	[Acct_Output_Gigawords] [bigint] NULL,
+	[Filter_Id] [nvarchar](63) NULL
 	CONSTRAINT [PK_accounting_data_tmp] PRIMARY KEY CLUSTERED 
 	(
         [id] ASC
